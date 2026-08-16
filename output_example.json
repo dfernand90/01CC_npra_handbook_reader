@@ -1,0 +1,14 @@
+{
+  "results": [
+    {
+      "handbook_name": "N400 Bruprosjektering",
+      "handbook_id": "N400",
+      "clause_id": "12.3.2",
+      "clause_title": "Krav til betongoverdekning",
+      "text": "For eksponeringsklasse XC3 skal betongoverdekningen være minimum 35 mm for armeringsklasse B500NC...",
+      "relevance_score": 0.87
+    }
+  ],
+  "query": "Krav til betongoverdekning for eksponeringsklasse XC3",
+  "total_results": 1
+}

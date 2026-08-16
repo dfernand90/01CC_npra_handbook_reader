@@ -1,0 +1,7 @@
+{
+  "name": "query_handbook",
+  "arguments": {
+    "query": "Krav til betongoverdekning for eksponeringsklasse XC3",
+    "top_k": 3
+  }
+}

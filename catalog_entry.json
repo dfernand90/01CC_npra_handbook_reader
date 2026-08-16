@@ -1,0 +1,37 @@
+{
+  "id": "npra-handbook-reader",
+  "name": "NPRA Handbook Reader",
+  "description": "Queries NPRA manuals for concrete design rules.",
+  "category": "engineering",
+  "icon": "description",
+  "capability": "composite",
+  "output_mode": "response_creator",
+  "status": "beta",
+  "agent_type": "gemini_mcp",
+  "prompts": [
+    {
+      "id": "run-tool",
+      "label": "Run NPRA Handbook Reader",
+      "description": "Queries NPRA manuals for concrete design rules.",
+      "template": "Queries NPRA manuals for concrete design rules.: query={query} top_k={top_k}",
+      "input_description": "Input parameters",
+      "output_description": "JSON of regulatory clauses",
+      "inputs": [
+        {
+          "key": "query",
+          "type": "string",
+          "label": "Search Query",
+          "default": "Krav til betongoverdekning XC3",
+          "hint": "Natural language question about NPRA design rules (Norwegian or English)"
+        },
+        {
+          "key": "top_k",
+          "type": "number",
+          "label": "Max Results",
+          "default": 5,
+          "hint": "Number of results to return"
+        }
+      ]
+    }
+  ]
+}
