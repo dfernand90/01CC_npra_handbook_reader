@@ -1,4 +1,4 @@
-FROM python:3.12-slim
+FROM python:3.11-slim
 
 WORKDIR /app
 
@@ -9,8 +9,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application files
 COPY . .
 
-# Expose port
-EXPOSE 8001
+# Port is provided dynamically by Cloud Run
 
 # Command to run
 CMD ["python", "server.py"]

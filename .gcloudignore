@@ -1,0 +1,7 @@
+.git
+.venv
+__pycache__
+input_for_agent
+tests
+*.pyc
+.env
