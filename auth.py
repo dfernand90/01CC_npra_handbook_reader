@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv(os.path.join(os.path.dirname(os.path.dirname(__file__)), '.env'))
 
 def setup_auth_middleware(app):
-    api_key = os.getenv("API_KEY", "test")
+    api_key = os.getenv("API_KEY", "contextual0192837465")
     
     @app.middleware("http")
     async def auth_middleware(request: Request, call_next):
